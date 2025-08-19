@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrimad Bhagavad Gita</title>
+    <link rel="icon" type="image/png" href="../assets/images/swastika.png" />
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fff4ea;
+      }
+      .navbar {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        width: 100%;
+        -webkit-box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+      }
+      .cards-section {
+        margin: 100px auto;
+      }
+      .nav-link {
+        color: white;
+      }
+      .navbar {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        width: 100%;
+        -webkit-box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+      }
+      h2 {
+        color: #468a9a;
+        font-weight: 600;
+      }
+      .card {
+        border: 1px #8c0714 solid;
+      }
+      .col-2 {
+        font-size: xx-large;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        color: #8c0714;
+        font-weight: 800;
+      }
+      .card-title {
+        line-height: 40px;
+        font-weight: 700;
+      }
+      footer {
+        /* position: fixed; */
+        bottom: 0;
+        width: 100%;
+      }
+      .shlokas {
+        padding: 100px;
+      }
+      .img-fluid {
+        width: 50%;
+      }
+      .chapter-nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      .chapter-nav a {
+        background: #468a9a;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease;
+      }
+
+      .chapter-nav a:hover {
+        background: #c96868;
+      }
+      @media (min-width: 320px) and (max-width: 1024px) {
+        .cards-section {
+          padding: 30px;
+          margin: 50px auto;
+        }
+        .navbar-collapse {
+          flex-basis: 100%;
+          flex-grow: 1;
+          align-items: center;
+          text-align: center;
+        }
+        .navbar-brand {
+          font-size: 15px;
+        }
+        .card-title {
+          line-height: 40px;
+          font-weight: 700;
+          font-size: large;
+        }
+        .col-2 {
+          font-size: x-large;
+        }
+        .card-text {
+          font-size: medium;
+        }
+        .logo {
+          width: 15px;
+          height: 15px;
+        }
+        .logoname {
+          display: flex;
+        }
+        .img-fluid {
+          width: 100%;
+        }
+        .shlokas {
+          padding: 100px 50px 50px 50px;
+        }
+        .navbar-toggler-icon {
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          vertical-align: middle;
+          background-image: var(--bs-navbar-toggler-icon-bg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+        }
+        .nav-link {
+          color: white;
+          padding: 20px;
+        }
+        .col-md-4 {
+          margin: 10px 0px 30px 0px;
+        }
+        footer {
+          font-size: small;
+        }
+        b,
+        strong {
+          font-weight: bolder;
+          font-size: small;
+        }
+        #shlokatitle {
+          font-size: x-large;
+        }
+        .chapter-nav a {
+          background: #468a9a;
+          color: white;
+          margin: 10px;
+          padding: 10px 20px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: 0.3s ease;
+        }
+        .chapter-nav {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="logoname">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="../assets/images/swastika.png"
+              alt="Shrimad Bhagavad Gita"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a class="navbar-brand" href="index.html">Shrimad Bhagavad Gita</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../chapters.html">Chapters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- #8c0714 -->
+    <center>
+      <section class="shlokas">
+        <div class="container-fluid">
+          <img
+            src="../assets/images/Bhagavad_Gita.jpg"
+            class="img-fluid rounded shadow"
+          />
+          <br /><br />
+          <span style="font-size: xx-large; color: #468a9a" id="shlokatitle"
+            ><b id="shlokatitle">तीसरा अध्यायः कर्मयोग</b></span
+          >
+          <br /><br />
+          <div class="sholkadiv" dir="ltr">
+            दूसरे अध्याय में भगवान श्रीकृष्ण ने श्लोक 11 से श्लोक 30 तक
+            आत्मतत्त्व समझाकर सांख्ययोग का प्रतिपादन किया&nbsp;|&nbsp;बाद में
+            श्लोक 31 से श्लोक 53 तक समस्त बुद्धिरूप कर्मयोग के द्वारा परमेश्वर
+            को पाये हुए स्थितप्रज्ञ सिद्ध पुरुष के लक्षण, आचरण और महत्व का
+            प्रतिपादन किया&nbsp;|&nbsp;इसमें कर्मयोग की महिमा बताते हुए भगवान ने
+            47 तथा 48वें श्लोक में कर्मयोग का स्वरूप बताकर अर्जुन को कर्म करने
+            को कहा&nbsp;|&nbsp;49वें श्लोक में समत्व बुद्धिरूप कर्मयोग की
+            अपेक्षा सकाम कर्म का स्थान बहुत नीचा बताया&nbsp;|&nbsp;50वें श्लोक
+            में समत्व बुद्धियुक्त पुरुष की प्रशंसा करके अर्जुन को कर्मयोग में
+            जुड़ जाने के लिए कहा और 51 वे श्लोक में बताया कि समत्व बुद्धियुक्त
+            ज्ञानी पुरुष को परम पद की प्राप्ति होती है&nbsp;|&nbsp;यह प्रसंग
+            सुनकर अर्जुन ठीक से तय नहीं कर पाया&nbsp;|&nbsp;इसलिए भगवान से उसका
+            और स्पष्टीकरण कराने तथा अपना निश्चित कल्याण जानने की इच्छा से अर्जुन
+            पूछता हैः
+          </div>
+          <div dir="ltr">
+            <h3
+              style="text-align: center"
+              id="_Third_Chapter_of_Shreemad_Bhagvat_Geeta_in_Hindi"
+            >
+              <br />
+              Third Chapter of Shreemad Bhagvat Geeta in Hindi
+            </h3>
+            <br /><br />
+            <div style="text-align: center">
+              <b><span style="color: #8c0714">।। अथ तृतीयोऽध्यायः ।।</span></b>
+            </div>
+            <div style="text-align: center">
+              <b><br /></b>
+            </div>
+            <div style="text-align: center">
+              <b><span style="color: #8c0714">अर्जुन उवाच</span></b>
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तत्किं कर्मणि घोरे मां नियोजयसि केशव।।1।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              अर्जुन बोलेः हे जनार्दन&nbsp;!&nbsp;यदि आपको कर्म की अपेक्षा ज्ञान
+              श्रेष्ठ मान्य है तो फिर हे केशव&nbsp;!&nbsp;मुझे भयंकर कर्म में
+              क्यों लगाते हैं?
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम्।।2।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              आप मिले हुए वचनों से मेरी बुद्धि को मानो मोहित कर रहे
+              हैं&nbsp;|&nbsp;इसलिए उस एक बात को निश्चित करके कहिए जिससे मैं
+              कल्याण को प्राप्त हो जाऊँ&nbsp;|(2)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b><span style="color: #8c0714">श्रीभगवानुवाच</span></b>
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >लोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ज्ञानयोगेन सांख्यानां कर्मयोगेन योगिनाम्।।3।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              श्री भगवनान बोलेः हे निष्पाप&nbsp;!&nbsp;इस लोक में दो प्रकार की
+              निष्ठा मेरे द्वारा पहले कही गयी है&nbsp;|&nbsp;उनमें से
+              सांख्ययोगियों की निष्ठा तो ज्ञानयोग से और योगियों की निष्ठा
+              कर्मयोग से होती है&nbsp;|(3)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >न च संन्यसनादेव सिद्धिं समधिगच्छति।।4।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              मनुष्य न तो कर्मों का आरम्भ किये बिना निष्कर्मता को यानि योगनिष्ठा
+              को प्राप्त होता है और न कर्मों के केवल त्यागमात्र से सिद्धि यानी
+              सांख्यनिष्ठा को ही प्राप्त होता है&nbsp;|(4)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।5।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              निःसंदेह कोई भी मनुष्य किसी काल में क्षणमात्र भी बिना कर्म किये
+              नहीं रहता, क्योंकि सारा मनुष्य समुदाय प्रकृति जनित गुणों द्वारा
+              परवश हुआ कर्म करने के लिए बाध्य किया जाता है&nbsp;|
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >इन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते।।6।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              जो मूढबुद्धि मनुष्य समस्त इन्द्रियों को हठपूर्वक ऊपर से रोककर मन
+              से उन इन्द्रियों के विषयों का चिन्तन करता रहता है, वह मिथ्याचारी
+              अर्थात् दम्भी कहा जाता है&nbsp;|(6)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यस्त्विन्द्रियाणी मनसा नियम्यारभतेऽर्जुन।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >कर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते।।7।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              किन्तु हे&nbsp;&nbsp;अर्जुन&nbsp;!&nbsp;जो पुरुष मन से इन्द्रियों
+              को वश में करके अनासक्त हुआ समस्त इन्द्रियों द्वारा कर्मयोग का आचरण
+              करता है, वही श्रेष्ठ है&nbsp;|(7)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >शरीरयात्रापि च ते न प्रसिद्धयेदकर्मणः।।8।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              तू शास्त्रविहित कर्तव्य कर्म कर, क्योंकि कर्म न करने की अपेक्षा
+              कर्म करना श्रेष्ठ है तथा कर्म न करने से तेरा शरीर निर्वाह भी सिद्ध
+              नहीं होगा&nbsp;|(8)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर।।9।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              यज्ञ के निमित्त किये जाने कर्मों के अतिरिक्त दूसरे कर्मों में लगा
+              हुआ ही यह मनुष्य समुदाय कर्मों से बँधता है&nbsp;|&nbsp;इसलिए हे
+              अर्जुन&nbsp;!&nbsp;तू आसक्ति से रहित होकर उस यज्ञ के निमित्त ही
+              भलीभाँति कर्तव्य कर्म कर&nbsp;|(9)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अनेन प्रसविष्यध्वमेष वोऽस्तिवष्टकामधुक्।।10।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              प्रजापति ब्रह्मा ने कल्प के आदि में यज्ञ सहित प्रजाओं को रचकर उनसे
+              कहा कि तुम लोग इस यज्ञ के द्वारा वृद्धि को प्राप्त होओ और यह यज्ञ
+              तुम लोगों को इच्छित भोग प्रदान करने वाला हो|(10)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div
+              class="widget HTML position-relative mb-4"
+              data-version="2"
+              id="HTML13"
+            >
+              <div class="widget-content text-break">
+                <ins
+                  class="adsbygoogle"
+                  style="display: block; text-align: center"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-8208038056184353"
+                  data-ad-slot="5196371450"
+                  data-adsbygoogle-status="done"
+                  ><iframe
+                    id="aswift_0"
+                    style="
+                      height: 1px !important;
+                      max-height: 1px !important;
+                      max-width: 1px !important;
+                      width: 1px !important;
+                    "
+                    ><iframe id="google_ads_frame0"></iframe></iframe
+                ></ins>
+                <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </div>
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >देवान्भावयतानेन ते देवा भावयन्तु वः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >परस्परं भावयन्तः श्रेयः परमवाप्स्यथ।।11।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              तुम लोग इस यज्ञ के द्वारा देवताओं को उन्नत करो और वे देवता तुम
+              लोगों को उन्नत करें&nbsp;|&nbsp;इस प्रकार निःस्वार्थभाव से
+              एक-दूसरे को उन्नत करते हुए तुम लोग परम कल्याण को प्राप्त हो
+              जाओगे&nbsp;|(11)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तैर्दत्तानप्रदायैभ्यो यो भुंक्ते स्तेन एव सः।।12।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              यज्ञ के द्वारा बढ़ाये हुए देवता तुम लोगों को बिना माँगे ही इच्छित
+              भोग निश्चय ही देते रहेंगे&nbsp;|&nbsp;इस प्रकार उन देवताओं के
+              द्वारा दिये हुए भोगों को जो पुरुष उनको बिना दिये स्वयं भोगता है,
+              वह चोर ही है&nbsp;|(12)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >भुंजते ते त्वघं पापा ये पचन्त्यात्मकारणात्।।13।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              यज्ञ से बचे हुए अन्न को खाने वाले श्रेष्ठ पुरुष सब पापों से मुक्त
+              हो जाते हैं और पापी लोग अपना शरीर-पोषण करने के लिये ही अन्न पकाते
+              हैं, वे तो पाप को ही खाते हैं&nbsp;|(13)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अन्नाद् भवन्ति भूतानि पर्जन्यादन्नसंभवः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यज्ञाद् भवति पर्जन्यो यज्ञः कर्मसमुद् भवः।।14।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >कर्म ब्रह्मोद् भवं विद्धि ब्रह्माक्षरसमुदभवम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम्।।15।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              सम्पूर्ण प्राणी अन्न से उत्पन्न होते हैं, अन्न की उत्पत्ति वृष्टि
+              से होती है, वृष्टि यज्ञ से होती है और यज्ञ विहित कर्मों से उत्पन्न
+              होने वाला है&nbsp;|&nbsp;कर्मसमुदाय को तू वेद से उत्पन्न और वेद को
+              अविनाशी परमात्मा से उत्पन्न हुआ जान&nbsp;|&nbsp;इससे सिद्ध होता है
+              कि सर्वव्यापी परम अक्षर परमात्मा सदा ही यज्ञ में प्रतिष्ठित
+              है&nbsp;|
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अघायुरिन्द्रियारामो मोघं पार्थ स जीवति।।16।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              हे पार्थ&nbsp;!&nbsp;जो पुरुष इस लोक में इस प्रकार परम्परा से
+              प्रचलित सृष्टिचक्र के अनुकूल नहीं बरतता अर्थात् अपने कर्तव्य का
+              पालन नहीं करता, वह इन्द्रियों के द्वारा भोगों में रमण करने वाला
+              पापायु पुरुष व्यर्थ ही जीता है&nbsp;|(16)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >आत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते।।17।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              परन्तु जो मनुष्य आत्मा में ही रमण करने वाला और आत्मा में ही तृप्त
+              तथा आत्मा में ही सन्तुष्ट है, उसके लिए कोई कर्तव्य नहीं
+              है&nbsp;|(17)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >न चास्य सर्वभूतेषु कश्चिदर्थव्यपाश्रयः।।18।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              उस महापुरुष का इस विश्व में न तो कर्म करने से कोई प्रयोजन रहता है
+              और न कर्मों के न करने से ही कोई प्रयोजन रहता है तथा सम्पूर्ण
+              प्राणियों में भी इसका किंचिन्मात्र भी स्वार्थ का सम्बन्ध नहीं
+              रहता&nbsp;|(18)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तस्मादसक्तः सततं कार्यं कर्म समाचर।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः।।19।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              इसलिए तू निरन्तर आसक्ति से रहित होकर सदा कर्तव्यकर्म को भली भाँति
+              करता रह क्योंकि आसक्ति से रहित होकर कर्म करता हुआ मनुष्य परमात्मा
+              को प्राप्त हो जाता है&nbsp;|(19)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >कर्मणैव हि संसिद्धिमास्थिता जनकादयः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >लोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि।।20।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              जनकादि ज्ञानीजन भी आसक्ति रहित कर्मद्वारा ही परम सिद्धि को प्राप्त
+              हुए थे&nbsp;|&nbsp;इसलिए तथा लोकसंग्रह को देखते हुए भी तू कर्म
+              करने को ही योग्य है अर्थात् तुझे कर्म करना ही उचित है&nbsp;|(20)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते।।21।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              श्रेष्ठ पुरुष जो-जो आचरण करता है, अन्य पुरुष भी वैसा-वैसा ही आचरण
+              करते हैं&nbsp;|&nbsp;वह जो कुछ प्रमाण कर देता है, समस्त
+              मनुष्य-समुदाय उसके अनुसार बरतने लग जाता है&nbsp;|(21)
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किंचन।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >नानवाप्तमवाप्तव्यं वर्त एव च कर्मणि।।22।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              हे अर्जुन&nbsp;!&nbsp;मुझे इन तीनों लोकों में न तो कुछ कर्तव्य है
+              न ही कोई भी प्राप्त करने योग्य वस्तु अप्राप्त है, तो भी मैं कर्म
+              में ही बरतता हूँ&nbsp;|(22)
+            </div>
+          </div>
+          <div class="chapter-nav">
+            <a href="a2.html" class="prev">← Previous Chapter</a>
+            <a href="a4.html" class="next">Next Chapter →</a>
+          </div>
+        </div>
+      </section>
+    </center>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+      © 2025 Shrimad Bhagavad Gita Website | Built with ❤️
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

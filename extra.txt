@@ -1,0 +1,47 @@
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/swastika.png"
+            alt="Shrimad Bhagavad Geeta"
+            width="24"
+            height="24"
+          />
+        </a>
+        <a class="navbar-brand" href="index.html">Shrimad Bhagavad Geeta</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Hero Section -->
+    <header class="bg-primary text-white text-center p-5">
+      <h1>Shrimad Bhagavad Gita</h1>
+      <p class="lead">
+        This is a simple static website using HTML, CSS, JS, and Bootstrap.
+      </p>
+    </header>
+
+    <!-- Content -->
+    <main class="container my-5">
+      <h2>About This Site</h2>
+      <p>
+        This site is built with HTML, styled with CSS, and uses Bootstrap
+        components.
+      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+      &copy; 2025 Shrimad Bhagavad Geeta.
+      <br />All rights reserved.
+    </footer>

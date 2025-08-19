@@ -1,0 +1,124 @@
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* color palette */
+/* #FFF4EA -> cream
+   #FADFA1 -> yellow
+   #C96868 -> red
+   #7EACB5 -> blue
+   #468A9A -> modified blue */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FFF4EA;
+}
+.navbar{
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 44px 0px rgba(0,0,0,0.38); 
+box-shadow: 0px 5px 44px 0px rgba(0,0,0,0.38);
+}
+.container-fluid{
+    margin: 100px auto;
+    padding-top: 3rem;
+}
+h1, h2 {
+  font-weight: bold;
+}
+h2{
+  color: #468A9A;
+}
+#landingtitle{
+    color: #468A9A;
+}
+#explorebtn{
+  background-color: #FADFA1;
+  border: 1px #ffb300 solid;
+  font-size: medium;
+}
+#explorebtn2{
+  background-color: #FADFA1;
+  border: 1px #ffb300 solid;
+  font-size: 16px;
+}
+#whymatter{
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+.card{
+  border: 2px #C96868 solid;
+}
+.card-body{
+  padding: 0px;
+}
+.card-title{
+  background-color: #C96868;
+  color: white;
+  padding: 10px;
+}
+.card-text{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+/* #cardbodysacred{
+  padding: 3rem;
+} */
+.quote-banner{
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+.align-items-center{
+  text-align: justify;
+}
+.nav-link{
+    color: white;
+}
+
+footer {
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+footer p-3{
+    padding: 1rem;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .container-fluid{
+          padding: 30px;
+        margin: 50px auto;
+  }
+  .navbar-brand{
+    font-size: 15px;
+  }
+  .logo{
+    width: 15px;
+    height: 15px;
+  }
+  .logoname{
+    display: flex;
+  }
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.nav-link {
+    color: white;
+    padding: 20px;
+}
+.col-md-4{
+      margin: 10px 0px 30px 0px;
+}
+footer{
+  font-size: small;
+}
+}
