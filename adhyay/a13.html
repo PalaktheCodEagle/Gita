@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrimad Bhagavad Gita</title>
+    <link rel="icon" type="image/png" href="../assets/images/swastika.png" />
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fff4ea;
+      }
+      .navbar {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        width: 100%;
+        -webkit-box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+      }
+      .cards-section {
+        margin: 100px auto;
+      }
+      .nav-link {
+        color: white;
+      }
+      .navbar {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        width: 100%;
+        -webkit-box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+      }
+      h2 {
+        color: #468a9a;
+        font-weight: 600;
+      }
+      .card {
+        border: 1px #8c0714 solid;
+      }
+      .col-2 {
+        font-size: xx-large;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        color: #8c0714;
+        font-weight: 800;
+      }
+      .card-title {
+        line-height: 40px;
+        font-weight: 700;
+      }
+      footer {
+        /* position: fixed; */
+        bottom: 0;
+        width: 100%;
+      }
+      .shlokas {
+        padding: 100px;
+      }
+      .img-fluid {
+        width: 50%;
+      }
+      .chapter-nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      .chapter-nav a {
+        background: #468a9a;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease;
+      }
+
+      .chapter-nav a:hover {
+        background: #c96868;
+      }
+      @media (min-width: 320px) and (max-width: 1024px) {
+        .cards-section {
+          padding: 30px;
+          margin: 50px auto;
+        }
+        .navbar-collapse {
+          flex-basis: 100%;
+          flex-grow: 1;
+          align-items: center;
+          text-align: center;
+        }
+        .navbar-brand {
+          font-size: 15px;
+        }
+        .card-title {
+          line-height: 40px;
+          font-weight: 700;
+          font-size: large;
+        }
+        .col-2 {
+          font-size: x-large;
+        }
+        .card-text {
+          font-size: medium;
+        }
+        .logo {
+          width: 15px;
+          height: 15px;
+        }
+        .logoname {
+          display: flex;
+        }
+        .img-fluid {
+          width: 100%;
+        }
+        .shlokas {
+          padding: 100px 50px 50px 50px;
+        }
+        .navbar-toggler-icon {
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          vertical-align: middle;
+          background-image: var(--bs-navbar-toggler-icon-bg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+        }
+        .nav-link {
+          color: white;
+          padding: 20px;
+        }
+        .col-md-4 {
+          margin: 10px 0px 30px 0px;
+        }
+        footer {
+          font-size: small;
+        }
+        b,
+        strong {
+          font-weight: bolder;
+          font-size: small;
+        }
+        #shlokatitle {
+          font-size: x-large;
+        }
+        .chapter-nav a {
+          background: #468a9a;
+          color: white;
+          margin: 10px;
+          padding: 10px 20px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: 0.3s ease;
+        }
+        .chapter-nav {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="logoname">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="../assets/images/swastika.png"
+              alt="Shrimad Bhagavad Gita"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a class="navbar-brand" href="index.html">Shrimad Bhagavad Gita</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../chapters.html">Chapters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- #8c0714 -->
+    <center>
+      <section class="shlokas">
+        <div class="container-fluid">
+          <img
+            src="../assets/images/Bhagavad_Gita.jpg"
+            class="img-fluid rounded shadow"
+          />
+          <br /><br />
+          <span style="font-size: xx-large; color: #468a9a" id="shlokatitle"
+            ><b id="shlokatitle"
+              >तेरहवाँ अध्यायः क्षेत्रक्षत्रज्ञविभागयोग</b
+            ></span
+          >
+          <br /><br />
+          <div class="sholkadiv" dir="ltr">
+            <div style="text-align: center">
+              बारहवें अध्याय के प्रारम्भ में अर्जुन ने सगुण और निर्गुण के
+              उपासकों की श्रेष्ठता के विषय में प्रश्न किया था। उसका उत्तर देते
+              हुए भगवान श्रीकृष्ण ने दूसरे श्लोक में संक्षिप्त में सगुण उपासकों
+              की श्रेष्ठता बतायी और 3 से 5 श्लोक तक निर्गुण उपासना का स्वरूप
+              उसका फल तथा उसकी क्लिष्टता बतायी है। उसके बाद 6 से 20 श्लोक तक
+              सगुण उपासना का महत्त्व, फल, प्रकार और भगवद् भक्तों के लक्षणों का
+              वर्णन करके अध्याय समाप्त किया, परन्तु निर्गुण का तत्त्व, महिमा और
+              उसकी प्राप्ति के साधन विस्तारपूर्वक नहीं समझाये थे, इसलिए निर्गुण
+              (निराकार) का तत्त्व अर्थात् ज्ञानयोग का विषय ठीक से समझने के लिए
+              इस तेरहवें अध्याय का आरम्भ करते हैं।&nbsp;
+            </div>
+          </div>
+          <br />
+          <div style="text-align: center">
+            <h3 id="_Sixth_Chapter_of_Shreemad_Bhagvat_Geeta_in_Hindi">
+              Thirteenth Chapter of Shreemad Bhagvat Geeta in Hindi
+            </h3>
+            <br /><br />
+          </div>
+          <div class="entry-text text-break mb-5" id="post-body">
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714">।। अथ त्रयोदशोऽध्यायः ।।</span></b
+              >
+            </div>
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b><span style="color: #8c0714">श्रीभगवानुवाच</span></b>
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः।।1।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              श्री भगवान बोलेः हे अर्जुन ! यह शरीर 'क्षेत्र' इस नाम से कहा जाता
+              है और इसको जो जानता है, उसको 'क्षेत्रज्ञ' इस नाम से उनके तत्त्व को
+              जानने वाले ज्ञानीजन कहते हैं।(1)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >क्षेत्रक्षेत्रज्ञोर्ज्ञानं यत्तज्ज्ञानं मतं मम।।2।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              हे अर्जुन ! तू सब क्षेत्रों में क्षेत्रज्ञ अर्थात् जीवात्मा भी
+              मुझे ही जान और क्षेत्र-क्षेत्रज्ञ को अर्थात् विकारसहित प्रकति का
+              और पुरुष का जो तत्त्व से जानना है, वह ज्ञान है – ऐसा मेरा मत
+              है।(2)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तत्क्षेत्रं यच्च याद्वक्च यद्विकारि यतश्च यत्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >स च यो यत्प्रभावश्च तत्समासेन मे श्रृणु।।3।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              वह क्षेत्र जो और जैसा है तथा जिन विकारों वाला है और जिस कारण से जो
+              हुआ है तथा क्षेत्रज्ञ भी जो और जिस प्रभाववाला है – वह सब संक्षेप
+              में मुझसे सुन।(3)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्चितैः।।4।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              यह क्षेत्र और क्षेत्रज्ञ का तत्त्व ऋषियों द्वारा बहुत प्रकार से
+              कहा गया है और विविध वेदमंत्रों द्वारा भी विभागपूर्वक कहा गया है
+              तथा भली भाँति निश्चय किए हुए युक्तियुक्त ब्रह्मसूत्र के पदों
+              द्वारा भी कहा गया है।(4)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >महाभूतान्यहंकारो बुद्धिरव्यक्तमेव च।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >इन्द्रियाणि दशैकं च पंच चेन्द्रियगोचराः।।5।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >इच्छा द्वेषः सुखं दुःखं संघातश्चेतना धृतिः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >एतत्क्षेत्रं समासेन सविकारमुदाहृतम्।।6।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              पाँच महाभूत, अहंकार, बुद्धि और मूल प्रकृति भी तथा दस इन्द्रियाँ,
+              एक मन और पाँच इन्द्रियों के विषय अर्थात् शब्द, स्पर्श, रूप, रस और
+              गन्ध तथा इच्छा, द्वेष, सुख-दुःख, स्थूल देह का पिण्ड, चेतना और धृति
+              – इस प्रकार विकारों के सहित यह क्षेत्र संक्षेप से कहा गया।(5,6)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अमानित्वदम्भित्वमहिंसा क्षान्तिरार्जवम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः।।7।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >इन्द्रियार्थेषु वैराग्यमनहंकार एव च।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम्।।8।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >असक्तिरनभिष्वंगः पुत्रदारगृहादिषु।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु।।9।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >मयि चानन्ययोगेन भक्तिरव्यभिचारिणी।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >विविक्तदेशसेवित्वमरतिर्जनसंसदि।।10।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा।।11।।</span
+                ></b
+              >
+            </div>
+            <br />
+
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              श्रेष्ठता के ज्ञान का अभिमान का अभाव, दम्भाचरण का अभाव, किसी
+              प्राणी को किसी प्रकार भी न सताना, क्षमाभाव, मन-वाणी आदि की सरलता,
+              श्रद्धा-भक्तिसहित गुरु की सेवा, बाहर-भीतर की शुद्धि, अन्तःकरण की
+              स्थिरता और मन-इन्द्रियोंसहित शरीर का निग्रह। इस लोक और परलोक
+              सम्पूर्ण भोगों में आसक्ति का अभाव और अहंकार का भी अभाव, जन्म,
+              मृत्यु, जरा और रोग आदि में दुःख और दोषों का बार-बार विचार करना।
+              पुत्र, स्त्री, घर और धन आदि में आसक्ति का अभाव, ममता का न होना तथा
+              प्रिय और अप्रिय की प्राप्ति में सदा ही चित्त का सम रहना। मुझ
+              परमेश्वर में अनन्य योग के द्वारा अव्यभिचारिणी भक्ति तथा एकान्त और
+              शुद्ध देश में रहने का स्वभाव और विषयासक्त मनुष्यों के समुदाय में
+              प्रेम का न होना। अध्यात्मज्ञान में नित्य स्थिति और तत्त्वज्ञान के
+              अर्थरूप परमात्मा को ही देखना – यह सब ज्ञान है और जो इससे विपरीत
+              है, वह अज्ञान है – ऐसा कहा है।(7,8,9,10,11)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वामृतमश्नुते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते।।12।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              जो जानने योग्य हैं तथा जिसको जानकर मनुष्य परमानन्द को प्राप्त होता
+              है, उसको भलीभाँति कहूँगा। वह अनादि वाला परब्रह्म न सत् ही कहा जाता
+              है, न असत् ही।(12)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति।।13।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              वह सब ओर हाथ पैर वाला, सब और नेत्र, सिर ओर मुख वाला तथा सब ओर कान
+              वाला है क्योंकि वह संसार में सबको व्याप्त करके स्थित है।(13)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <span style="color: #8c0714"
+                ><b>सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम्।</b></span
+              >
+            </div>
+            <div style="text-align: center">
+              <span style="color: #8c0714"
+                ><b>असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च।।14।।</b></span
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              वह सम्पूर्ण इन्द्रियों के विषयों को जानने वाला है, परन्तु वास्तव
+              में सब इन्द्रियों से रहित है तथा आसक्ति रहित होने पर भी सबका
+              धारण-पोषण करने वाला और निर्गुण होने पर भी गुणों को भोगने वाला
+              है।(14)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >बहिरन्तश्च भूतानामचरं चरमेव च।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत्।।15।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              वह चराचर सब भूतों के बाहर भीतर परिपूर्ण है और चर-अचर भी वही है और
+              वह सूक्ष्म होने से अविज्ञेय है तथा अति समीप में और दूर में भी वही
+              स्थित है।(15)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अविभक्तं च भूतेषु विभक्तमिव च स्थितम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च।।16।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              वह परमात्मा विभागरहित एक रूप से आकाश के सदृश परिपूर्ण होने पर भी
+              चराचर सम्पूर्ण भूतों में विभक्त-सा स्थित प्रतीत होता है तथा वह
+              जानने योग्य परमात्मा के विष्णुरूप से भूतों को धारण-पोषण करने वाला
+              और रुद्ररूप से संहार करने वाला तथा ब्रह्मारूप से सबको उत्पन्न करने
+              वाला है।(16)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम्।।17।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              वह परब्रह्म ज्योतियों का भी ज्योति और माया से अत्यन्त परे कहा जाता
+              है। वह परमात्मा बोधस्वरूप, जानने के योग्य तथा तत्त्वज्ञान से
+              प्राप्त करने योग्य है और सबके हृदय मे विशेषरूप से स्थित है।(17)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते।।18।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              इस प्रकार क्षेत्र तथा ज्ञान और जानने योग्य परमात्मा का स्वरूप
+              संक्षेप से कहा गया। मेरा भक्त इसको तत्त्व से जानकर मेरे स्वरूप को
+              प्राप्त होता है।(18)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >प्रकृतिं पुरुषं चैव विद्धयनादी उभावपि।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >विकारांश्च गुणांश्चैव विद्धि प्रकृतिसम्भवान्।।19।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              प्रकृति और पुरुष – इन दोनों को ही तू अनादि जान और राग-द्वेषादि
+              विकारों को तथा त्रिगुणात्मक सम्पूर्ण पदार्थों को भी प्रकृति से ही
+              उत्पन्न जान।(19)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >कार्यकरणकर्तृत्वे हेतुः प्रकृतिरूच्यते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते।।20।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              कार्य और करण को उत्पन्न करने में हेतु प्रकृति कही जाती है और
+              जीवात्मा सुख-दुःखों के भोक्तापन में अर्थात् भोगने में हेतु कहा
+              जाता है।(20)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >पुरुषः प्रकृतिस्थो हि भुंक्ते प्रकृतिजान्गुणान्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >कारणं गुणसंगोऽस्य सदसद्योनिजन्मसु।।21।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              प्रकृति में स्थित ही पुरुष प्रकृति से उत्पन्न त्रिगुणात्मक
+              पदार्थों को भोगता है और इन गुणों का संग ही इस जीवात्मा का अच्छी
+              बुरी योनियों में जन्म लेने का कारण है।(21)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >उपद्रष्टानुमन्ता च भर्ता भोक्ता महेश्वरः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः।।22।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              इस देह में स्थित वह आत्मा वास्तव में परमात्मा ही है। वही साक्षी
+              होने से उपद्रष्टा और यथार्थ सम्मति देने वाला होने से अनुमन्ता,
+              सबका धारण-पोषण करने वाला होने से भर्ता, जीवरूप से भोक्ता, ब्रह्मा
+              आदि का भी स्वामी होने से महेश्वर और शुद्ध सच्चिदानन्दघन होने से
+              परमात्मा-ऐसा कहा गया है।(22)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >य एवं वेत्ति पुरुषं प्रकृतिं च गुणैः सह।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते।।23।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              इस प्रकार पुरुष को और गुणों के सहित प्रकृति को जो मनुष्य तत्त्व से
+              जानता है, वह सब प्रकार से कर्तव्यकर्म करता हुआ भी फिर नहीं
+              जन्मता।(23)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अन्ये सांख्येन योगेन कर्मयोगेन चापरे।।24।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              उस परमात्मा को कितने ही मनुष्य तो शुद्ध हुई सूक्ष्म बुद्धि से
+              ध्यान के द्वारा हृदय में देखते हैं। अन्य कितने ही ज्ञानयोग के
+              द्वारा और दूसरे कितने ही कर्मयोग के द्वारा देखते हैं अर्थात्
+              प्राप्त करते हैं।(24)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अन्ये त्वेवमजानन्तः श्रुत्वान्येभ्य उपासते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः।।25।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              परन्तु इनसे दूसरे अर्थात् जो मन्द बुद्धि वाले पुरुष हैं, वे इस
+              प्रकार न जानते हुए दूसरों से अर्थात् तत्त्व के जानने वाले पुरुषों
+              से सुनकर ही तदनुसार उपासना करते हैं और वे श्रवणपरायण पुरुष भी
+              मृत्युरूप संसार सागर को निःसंदेह तर जाते हैं।(25)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यावत्संजायते किंचित्सत्त्वं स्थावरजंगमम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ।।26।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              हे अर्जुन ! यावन्मात्र जितने भी स्थावर-जंगम प्राणी उत्पन्न होते
+              हैं, उन सबको तू क्षेत्र और क्षेत्रज्ञ के संयोग से ही उत्पन्न
+              जान।(26)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >विनश्यत्स्वविनश्यन्तं पश्यति स पश्यति।।27।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              जो पुरुष नष्ट होते हुए सब चराचर भूतों में परमेश्वर को नाशरहित और
+              समभाव से स्थित देखता है, वही यथार्थ देखता है।(27)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >न हिनस्त्यात्मनात्मानं ततो याति परां गतिम्।।28।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              क्योंकि जो पुरुष सबमें समभाव से स्थित परमेश्वर को समान देखता हुआ
+              अपने द्वारा अपने को नष्ट नहीं करता, इससे वह परम गति को प्राप्त
+              होता है।(28)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यः पश्यति तथात्मानमकर्तारं स पश्यति।।29।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              और जो पुरुष सम्पूर्ण कर्मों को सब प्रकार से प्रकृति के द्वारा ही
+              किये जाते हुए देखता है और आत्मा को अकर्ता देखता है, वही यथार्थ
+              देखता है।(29)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यदा भूतपृथग्भावमेकस्थमनुपश्यति।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तत एव च विस्तारं ब्रह्म सम्पद्यते तदा।।30।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              जिस क्षण यह पुरुष भूतों&nbsp; पृथक-पृथक भाव को एक परमात्मा में ही
+              स्थित तथा उस परमात्मा से ही सम्पूर्ण भूतों का विस्तार देखता है,
+              उसी क्षण वह सच्चिदानन्दघन ब्रह्म को प्राप्त हो जाता है।(30)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते।।31।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              हे अर्जुन ! अनादि होने से और निर्गुण होने से यह अविनाशी परमात्मा
+              शरीर में स्थित होने पर भी वास्तव में न तो कुछ करता है और न लिप्त
+              ही होता है।(31)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >सर्वत्रावस्थितो देहे तथात्मा नोपलिप्यते।।32।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              जिस प्रकार सर्वत्र व्याप्त आकाश सूक्ष्म होने के कारण लिप्त नहीं
+              होता, वैसे ही देह में सर्वत्र स्थित आत्मा निर्गुण होने के कारण देह
+              के गुणों से लिप्त नहीं होता।(32)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत।।33।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              हे अर्जुन ! जिस प्रकार एक ही सूर्य इस सम्पूर्ण ब्रह्माण्ड को
+              प्रकाशित करता है, उसी प्रकार एक ही आत्मा सम्पूर्ण क्षेत्र को
+              प्रकाशित करता है।(33)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम्।।34।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              इस प्रकार क्षेत्र और क्षेत्रज्ञ के भेद को तथा कार्यसहित प्रकृति से
+              मुक्त होने का जो पुरुष ज्ञान-नेत्रों द्वारा तत्त्व से जानते हैं,
+              वे महात्माजन परब्रह्म परमात्मा को प्राप्त होते हैं।(34)
+            </div>
+            <br />
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <span style="color: #8c0714"
+                ><b
+                  >ॐ तत्सदिति श्रीमद् भगवद् गीतासूपनिषत्सु ब्रह्मविद्यायां
+                  योगशास्त्रे</b
+                ></span
+              >
+            </div>
+            <div style="text-align: center">
+              <span style="color: #8c0714"
+                ><b
+                  >श्रीकृष्णार्जुनसंवादे क्षेत्रक्षेत्रज्ञविभागयोगो नाम
+                  त्रयोदशोऽध्यायः ।।13।।</b
+                ></span
+              >
+            </div>
+            <br />
+            <div style="text-align: center">
+              इस प्रकार उपनिषद, ब्रह्मविद्या तथा योगशास्त्र रूप श्रीमद् भगवद्
+              गीता के
+            </div>
+            <div style="text-align: center">
+              श्रीकृष्ण-अर्जुन संवाद में क्षेत्रक्षेत्रज्ञविभागयोग नामक तेरहवाँ
+              अध्याय संपूर्ण हुआ।
+            </div>
+            <br />
+            <div style="text-align: center">
+              <b>ॐॐॐॐॐॐॐॐॐॐॐॐॐ</b>
+            </div>
+          </div>
+        </div>
+        <div class="chapter-nav">
+          <a href="a12.html" class="prev">← Previous Chapter</a>
+          <a href="a14.html" class="next">Next Chapter →</a>
+        </div>
+      </section>
+    </center>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+      © 2025 Shrimad Bhagavad Gita Website | Built with ❤️
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

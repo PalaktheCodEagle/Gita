@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrimad Bhagavad Gita</title>
+    <link rel="icon" type="image/png" href="../assets/images/swastika.png" />
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fff4ea;
+      }
+      .navbar {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        width: 100%;
+        -webkit-box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+      }
+      .cards-section {
+        margin: 100px auto;
+      }
+      .nav-link {
+        color: white;
+      }
+      .navbar {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        width: 100%;
+        -webkit-box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 5px 44px 0px rgba(0, 0, 0, 0.38);
+      }
+      h2 {
+        color: #468a9a;
+        font-weight: 600;
+      }
+      .card {
+        border: 1px #8c0714 solid;
+      }
+      .col-2 {
+        font-size: xx-large;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        color: #8c0714;
+        font-weight: 800;
+      }
+      .card-title {
+        line-height: 40px;
+        font-weight: 700;
+      }
+      footer {
+        /* position: fixed; */
+        bottom: 0;
+        width: 100%;
+      }
+      .shlokas {
+        padding: 100px;
+      }
+      .img-fluid {
+        width: 50%;
+      }
+      .chapter-nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      .chapter-nav a {
+        background: #468a9a;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease;
+      }
+
+      .chapter-nav a:hover {
+        background: #c96868;
+      }
+      @media (min-width: 320px) and (max-width: 1024px) {
+        .cards-section {
+          padding: 30px;
+          margin: 50px auto;
+        }
+        .navbar-collapse {
+          flex-basis: 100%;
+          flex-grow: 1;
+          align-items: center;
+          text-align: center;
+        }
+        .navbar-brand {
+          font-size: 15px;
+        }
+        .card-title {
+          line-height: 40px;
+          font-weight: 700;
+          font-size: large;
+        }
+        .col-2 {
+          font-size: x-large;
+        }
+        .card-text {
+          font-size: medium;
+        }
+        .logo {
+          width: 15px;
+          height: 15px;
+        }
+        .logoname {
+          display: flex;
+        }
+        .img-fluid {
+          width: 100%;
+        }
+        .shlokas {
+          padding: 100px 50px 50px 50px;
+        }
+        .navbar-toggler-icon {
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          vertical-align: middle;
+          background-image: var(--bs-navbar-toggler-icon-bg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+        }
+        .nav-link {
+          color: white;
+          padding: 20px;
+        }
+        .col-md-4 {
+          margin: 10px 0px 30px 0px;
+        }
+        footer {
+          font-size: small;
+        }
+        b,
+        strong {
+          font-weight: bolder;
+          font-size: small;
+        }
+        #shlokatitle {
+          font-size: x-large;
+        }
+        .chapter-nav a {
+          background: #468a9a;
+          color: white;
+          margin: 10px;
+          padding: 10px 20px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: 0.3s ease;
+        }
+        .chapter-nav {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="logoname">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="../assets/images/swastika.png"
+              alt="Shrimad Bhagavad Gita"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a class="navbar-brand" href="index.html">Shrimad Bhagavad Gita</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../chapters.html">Chapters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- #8c0714 -->
+    <center>
+      <section class="shlokas">
+        <div class="container-fluid">
+          <img
+            src="../assets/images/Bhagavad_Gita.jpg"
+            class="img-fluid rounded shadow"
+          />
+          <br /><br />
+          <span style="font-size: xx-large; color: #468a9a" id="shlokatitle"
+            ><b id="shlokatitle">बारहवाँ अध्यायः भक्तियोग</b></span
+          >
+          <br /><br />
+          <div class="sholkadiv" dir="ltr">
+            <div style="text-align: center">
+              दूसरे अध्याय से लेकर यहाँ तक भगवान ने प्रत्येक स्थान पर सगुण साकार
+              परमेश्वर की उपासना की प्रशंसा की। सातवें अध्याय से ग्यारहवें
+              अध्याय तक खास सगुण साकार परमात्मा की उपासना का महत्त्व बताया है।
+              उसके साथ पाँचवें अध्याय में 17 से 26 श्लोक तक, छठवें अध्याय में 24
+              से 29 श्लोक तक, आठवें अध्याय में 11 से 13 श्लोक तक इसके अलावा और
+              कई जगहों पर निर्गुण निराकार की उपासना का महत्त्व बताया है। अंत में
+              ग्यारहवें अध्याय के आखिरी श्लोक में सगुण-साकार भगवान की अनन्य
+              भक्ति का फल भगवत्प्राप्ति बताकर 'मत्कर्मकृत्' से शुरु हुए उस आखिरी
+              श्लोक में सगुण-साकार स्वरूप भगवान के भक्त की महत्ता जोर देकर समझाई
+              है। इस विषय पर अर्जुन के मन में ऐसी पैदा हुई कि निर्गुण-निराकार
+              ब्रह्म की तथा सगुण-साकार भगवान की उपासना करने वाले दोनों उपासकों
+              में उत्तम कौन? यह जानने के लिए अर्जुन पूछता हैः&nbsp;
+            </div>
+          </div>
+          <br />
+          <div style="text-align: center">
+            <h3 id="_Sixth_Chapter_of_Shreemad_Bhagvat_Geeta_in_Hindi">
+              Twelveth Chapter of Shreemad Bhagvat Geeta in Hindi
+            </h3>
+            <br /><br />
+          </div>
+          <div class="entry-text text-break mb-5" id="post-body">
+            <div style="text-align: center">
+              <b><span style="color: #8c0714">।। अथ द्वादशोऽध्यायः ।।</span></b>
+            </div>
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b><span style="color: #8c0714">अर्जुन उवाच</span></b>
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >एवं सततयुक्ता ये भक्तास्त्वां पर्युपासते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ये चाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः।।1।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              अर्जुन बोलेः जो अनन्य प्रेमी भक्तजन पूर्वोक्त प्रकार निरन्तर आपके
+              भजन ध्यान में लगे रहकर आप सगुणरूप परमेश्वर को और दूसरे जो केवल
+              अविनाशी सच्चिदानन्दघन निराकार ब्रह्म को ही अति श्रेष्ठ भाव से भजते
+              हैं – उन दोनों प्रकार के उपासकों में अति उत्तम योगवेत्ता कौन हैं?
+            </div>
+            <div style="text-align: center"></div>
+            <br />
+            <div style="text-align: center">
+              <b><span style="color: #8c0714">श्रीभगवानुवाच</span></b>
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >मय्यावेश्य मनो ये मां नित्ययुक्ता उपासते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >श्रद्धया परयोपेतास्ते मे युक्ततमा मताः।।2।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              श्री भगवान बोलेः मुझमें मन को एकाग्र करके निरन्तर मेरे भजन-ध्यान
+              में लगे हुए जो भक्तजन अतिशय श्रेष्ठ श्रद्धा से युक्त होकर मुझ
+              सगुणरूप परमेश्वर को भजते हैं, वे मुझको योगियों में अति उत्तम योगी
+              मान्य हैं।(2)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ये त्वक्षरमनिर्देश्यमव्यक्तं पर्युपासते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >सर्वत्रगमचिन्त्यं च कूटस्थमचलं ध्रुवम्।।3।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >संनियम्येन्द्रिग्रामं सर्वत्र समबुद्धयः</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ते प्राप्नुवन्ति मामेव सर्वभूतहिते रताः।।4।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते।।5।।</span
+                ></b
+              >
+            </div>
+
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्पराः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अनन्येनैव योगेन मां ध्यायन्त उपासते।।6।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तेषामहं समुद्धर्ता मृत्युसंसारसागरात्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >भवामि नचिरात्पार्थ मय्यावेशितचेतसाम्।।7।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              परन्तु&nbsp; जो मेरे परायण रहने वाले भक्तजन सम्पूर्ण कर्मों को
+              मुझे अर्पण करके मुझ सगुणरूप परमेश्वर को ही अनन्य भक्तियोग से
+              निरन्तर चिन्तन करते हुए भजते हैं। हे अर्जुन ! उन मुझमें चित्त
+              लगाने वाले प्रेमी भक्तों का मैं शीघ्र ही मृत्युरूप संसार-समुद्र से
+              उद्धार करने वाला होता हूँ।(6,7)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >मय्येव मन आधत्स्व मयि बुद्धिं निवेशय।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः।।8।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              मुझमें मन को लगा और मुझमें ही बुद्धि को लगा। इसके उपरान्त तू
+              मुझमें निवास करेगा, इसमें कुछ भी संशय नहीं है। (8)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अथ चित्तं समाधातुं शक्नोषि मयि स्थिरम्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अभ्यासयोगेन ततो मामिच्छाप्तुं धनंजय।।9।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              यदि तू मन को मुझमें अचल स्थापन करने के लिए समर्थ नहीं है तो हे
+              अर्जुन ! अभ्यासरूप योग के द्वारा मुझको प्राप्त होने के लिए इच्छा
+              कर।(9)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अभ्यासेऽप्यसमर्थोऽसि मत्कर्मपरमो भव।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >मदर्थमपि कर्माणि कुर्वन्सिद्धिमवाप्स्यसि।।10।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              यदि तू उपर्युक्त अभ्यास में भी असमर्थ है तो केवल मेरे लिए कर्म
+              करने के ही परायण हो जा। इस प्रकार मेरे निमित्त कर्मों को करता हुआ
+              भी मेरी प्राप्तिरूप सिद्धि को ही प्राप्त होगा।(10)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अथैतदप्यशक्तोऽसि कर्तुं मद्योगमाश्रितः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >सर्वकर्मफलत्यागं ततः कुरु यतात्मवान्।।11।।</span
+                ></b
+              >
+            </div>
+            <br />
+
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              यदि मेरी प्राप्ति रूप योग के आश्रित होकर उपर्युक्त साधन को करने
+              में भी तू असमर्थ है तो मन बुद्धि आदि पर विजय प्राप्त करने वाला
+              होकर सब कर्मों के फल का त्याग कर।(11)
+            </div>
+            <br />
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम्।।12।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              मर्म को न जानकर किये हुए अभ्यास से ज्ञान श्रेष्ठ है। ज्ञान से मुझ
+              परमेश्वर के स्वरूप का ध्यान श्रेष्ठ है और ध्यान से भी सब कर्मों के
+              फल का त्याग श्रेष्ठ है क्योंकि त्याग से तत्काल ही परम शान्ति होती
+              है।(12)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >निर्ममो निरहंकारः समदुःखसुखः क्षमी।।13।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >संतुष्टः सततं योगी यतात्मा दृढनिश्चयः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >मय्यर्पितमनोबुद्धिर्यो मद् भक्तः स मे प्रियः।।14।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              जो पुरुष सब भूतों में द्वेषभाव से रहित, स्वार्थरहित, सबका प्रेमी
+              और हेतुरहित दयालु है तथा ममता से रहित, अहंकार से रहित, सुख-दुःखों
+              की प्राप्ति में सम और क्षमावान है अर्थात् अपराध करने वाले को भी
+              अभय देने वाला है, तथा जो योगी निरन्तर सन्तुष्ट है, मन इन्द्रियों
+              सहित शरीर को वश में किये हुए हैं और मुझमें दृढ़ निश्चयवाला है – वह
+              मुझमें अर्पण किये हुए मन -बुद्धिवाला मेरा भक्त मुझको प्रिय
+              है।(13,14)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः।।15।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              जिससे कोई भी जीव उद्वेग को प्राप्त नहीं होता और जो स्वयं भी किसी
+              जीव से उद्वेग को प्राप्त नहीं होता तथा जो हर्ष, अमर्ष, भय और
+              उद्वेगादि से रहित है – वह भक्त मुझको प्रिय है। (15)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अनपेक्षः शुचिर्दक्ष उदासीनो गतव्यथः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >सर्वारम्भपरित्यागी यो मदभक्तः स मे प्रियः।।16।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              जो पुरुष आकांक्षा से रहित, बाहर-भीतर से शुद्ध, चतुर, पक्षपात से
+              रहित और दुःखों से छूटा हुआ है – वह सब आरम्भों का त्यागी मेरा भक्त
+              मुझको प्रिय है।(16)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >यो न हृष्यति न द्वेष्टि न शोचति न कांक्षति।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >शुभाशुभपरित्यागी भक्तिमान्यः स मे प्रियः।।17।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              जो न कभी हर्षित होता है, न द्वेष करता है, न शोक करता है, न कामना
+              करता है तथा जो शुभ और अशुभ सम्पूर्ण कर्मों का त्यागी है – वह
+              भक्तियुक्त पुरुष मुझको प्रिय है।(17)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >समः शत्रौ च मित्रे च तथा मानापमानयोः।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >शीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः।।18।।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >तुल्यनिन्दास्तुतिर्मौनी संतुष्टो येन केनचित्।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >अनिकेतः स्थिरमतिर्भक्तिमान्मे प्रियो नरः।।19।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              जो शत्रु-मित्र में और मान-अपमान में सम है तथा सर्दी, गर्मी और
+              सुख-दुःखादि द्वन्द्वों में सम है और आसक्ति से रहित है। जो
+              निन्दा-स्तुति को समान समझने वाला, मननशील और जिस किसी प्रकार से भी
+              शरीर का निर्वाह होने में सदा ही सन्तुष्ट है और रहने के स्थान में
+              ममता और आसक्ति से रहित है – वह स्थिरबुद्धि भक्तिमान पुरुष मुझको
+              प्रिय है।(18,19)
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते।</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >श्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः।।20।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center"></div>
+            <div style="text-align: center">
+              परन्तु जो श्रद्धायुक्त पुरुष मेरे परायण होकर इस ऊपर कहे हुए धर्ममय
+              अमृत को निष्काम प्रेमभाव से सेवन करते हैं, वे भक्त मुझको अतिशय
+              प्रिय हैं।(20)
+            </div>
+            <br />
+            <div style="text-align: center">
+              <br />
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >ॐ तत्सदिति श्रीमद् भगवद् गीतासूपनिषत्सु ब्रह्मविद्यायां
+                  योगशास्त्रे</span
+                ></b
+              >
+            </div>
+            <div style="text-align: center">
+              <b
+                ><span style="color: #8c0714"
+                  >श्रीकृष्णार्जुनसंवादे भक्तियोगो नाम द्वादशोऽध्यायः
+                  ।।12।।</span
+                ></b
+              >
+            </div>
+            <br />
+            <div style="text-align: center">
+              इस प्रकार उपनिषद, ब्रह्मविद्या तथा योगशास्त्र रूप श्रीमद् भगवद्
+              गीता के
+            </div>
+            <div style="text-align: center">
+              श्रीकृष्ण-अर्जुन संवाद में भक्तियोग नामक बारहवाँ अध्याय संपूर्ण
+              हुआ।
+            </div>
+            <br />
+            <div style="text-align: center">ॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐॐ</div>
+          </div>
+          <div class="chapter-nav">
+            <a href="a11.html" class="prev">← Previous Chapter</a>
+            <a href="a13.html" class="next">Next Chapter →</a>
+          </div>
+        </div>
+      </section>
+    </center>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+      © 2025 Shrimad Bhagavad Gita Website | Built with ❤️
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
